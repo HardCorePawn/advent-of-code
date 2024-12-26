@@ -19,3 +19,9 @@ fun parseIntPairs(inputText: String, separator: String):List<Pair<Int, Int>> {
         Pair(a.toInt(), b.toInt())
     }
 }
+
+fun parseIntLists(inputText: String, separator: String):List<List<Int>> {
+    return inputText.lines().filter { it.isNotEmpty() }.map { line ->
+        line.split(separator).map { it.toInt() }
+    }
+}
