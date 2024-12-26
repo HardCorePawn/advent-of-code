@@ -4,3 +4,5 @@
 build
 src/**/*.txt
 local.properties
+input/aoc????/day*.txt
+input/downloadinfo.txt

@@ -1,25 +1,15 @@
 # advent-of-code
 
-Welcome to the Advent of Code[^aoc] Kotlin project created by [hardcorepawn][github] using the [Advent of Code Kotlin Template][template] delivered by JetBrains.
+These are my solutions for the [Advent of Code][aoc] puzzles using the [Kotlin][kotlin] language.
 
-In this repository, hardcorepawn is about to provide solutions for the puzzles using [Kotlin][kotlin] language.
+(Partial) Solutions are currently provided for puzzles from the following Years:
+* [2015](https://adventofcode.com/2015)
+* [2024](https://adventofcode.com/2024)
 
-If you're stuck with Kotlin-specific questions or anything related to this template, check out the following resources:
-
-- [Kotlin docs][docs]
-- [Kotlin Slack][slack]
-- Template [issue tracker][issues]
-
-
-[^aoc]:
-    [Advent of Code][aoc] – An annual event of Christmas-oriented programming challenges started December 2015.
-    Every year since then, beginning on the first day of December, a programming puzzle is published every day for twenty-five days.
-    You can solve the puzzle and provide an answer using the language of your choice.
+---
+Credits:
+* DownloadData.kt functionality borrowed from: [Tomas Lööw][tomasloow]
 
 [aoc]: https://adventofcode.com
-[docs]: https://kotlinlang.org/docs/home.html
-[github]: https://github.com/hardcorepawn
-[issues]: https://github.com/kotlin-hands-on/advent-of-code-kotlin-template/issues
 [kotlin]: https://kotlinlang.org
-[slack]: https://surveys.jetbrains.com/s3/kotlin-slack-sign-up
-[template]: https://github.com/kotlin-hands-on/advent-of-code-kotlin-template
+[tomasloow]: https://github.com/TomasLoow/advent-of-code
