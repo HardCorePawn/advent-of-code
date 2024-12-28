@@ -55,3 +55,7 @@ data class Coord(val x: Int, val y: Int) {
 
     fun manhattanDistTo(dest: Coord) = abs(x - dest.x) + abs(y - dest.y)
 }
+
+fun withinBounds(coord: Coord, grid: Array<CharArray>): Boolean {
+    return coord.y in grid.indices && coord.x in grid[0].indices
+}
