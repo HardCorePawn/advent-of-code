@@ -59,3 +59,7 @@ data class Coord(val x: Int, val y: Int) {
 fun withinBounds(coord: Coord, grid: Array<CharArray>): Boolean {
     return coord.y in grid.indices && coord.x in grid[0].indices
 }
+
+fun withinBounds(coord: Coord, grid: Array<IntArray>): Boolean {
+    return coord.y in grid.indices && coord.x in grid[0].indices
+}

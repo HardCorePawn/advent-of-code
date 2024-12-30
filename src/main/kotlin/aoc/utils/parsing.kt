@@ -27,6 +27,10 @@ fun parseIntLists(inputText: String, separator: String):List<List<Int>> {
 }
 
 fun parseCharArray(input: String): Array<CharArray> {
-    val inputLines = input.lines().filter { it.isNotEmpty() }
-    return Array(inputLines.size) { index -> inputLines[index].toCharArray() }
+    return input.lines().filter { it.isNotEmpty() }.map { it.toCharArray() }.toTypedArray()
+}
+
+fun parseIntArray(input: String): Array<IntArray> {
+    return input.lines().filter { it.isNotEmpty() }.map { line ->
+        line.map { it.digitToInt() }.toIntArray() }.toTypedArray()
 }
