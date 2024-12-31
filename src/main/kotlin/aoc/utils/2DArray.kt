@@ -48,7 +48,7 @@ val cardinals = listOf( Direction.UP, Direction.RIGHT, Direction.DOWN, Direction
 /**
  * Class to represent a (x,y) Coord in a 2D grid (because Pair<Int, Int> gets messy :P)
  */
-data class Coord(val x: Int, val y: Int) {
+data class Coord(var x: Int, var y: Int) {
     operator fun plus(second: Coord) = Coord(x + second.x, y + second.y)
     operator fun minus(second: Coord) = Coord(x - second.x, y - second.y)
     operator fun times(multiplier: Int) = Coord(x * multiplier, y * multiplier)
