@@ -30,6 +30,20 @@ fun parseCharArray(input: String): Array<CharArray> {
     return input.lines().filter { it.isNotEmpty() }.map { it.toCharArray() }.toTypedArray()
 }
 
+fun parseCharArray(input: List<String>): Array<CharArray> {
+    return input.filter { it.isNotEmpty() }.map { it.toCharArray() }.toTypedArray()
+}
+
+fun char2DArrayToMap(grid: Array<CharArray>): Map<Coord, Char> {
+    val theMap = mutableMapOf<Coord, Char>()
+    grid.forEachIndexed { y, chars ->
+        chars.forEachIndexed { x, c ->
+            theMap[Coord(x,y)] = c
+        }
+    }
+    return theMap
+}
+
 fun parseIntArray(input: String): Array<IntArray> {
     return input.lines().filter { it.isNotEmpty() }.map { line ->
         line.map { it.digitToInt() }.toIntArray() }.toTypedArray()
